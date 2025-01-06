@@ -1,7 +1,7 @@
+import { addDoc, collection } from "@firebase/firestore";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-import { collection, addDoc } from "@firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDJPq9a0YPoQYkpQ-Uaw7aXQRXzzqOKzFA",
@@ -17,4 +17,5 @@ const app = initializeApp(firebaseConfig, 'comments-app');
 const db = getFirestore(app);
 const storage = getStorage(app);
 
-export { db, storage, collection, addDoc };
+export { addDoc, collection, db, storage };
+

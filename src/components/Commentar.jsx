@@ -1,17 +1,14 @@
-import React, { useState, useEffect, useRef, useCallback, memo } from 'react';
-import { getDocs, addDoc, collection, onSnapshot, query, orderBy, serverTimestamp } from 'firebase/firestore';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { db, storage } from '../firebase-comment';
-import { MessageCircle, UserCircle2, Loader2, AlertCircle, Send, ImagePlus, X } from 'lucide-react';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { addDoc, collection, onSnapshot, orderBy, query, serverTimestamp } from 'firebase/firestore';
+import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
+import { AlertCircle, ImagePlus, Loader2, MessageCircle, Send, UserCircle2, X } from 'lucide-react';
+import React, { memo, useCallback, useEffect, useRef, useState } from 'react';
+import { db, storage } from '../firebase-comment';
 
 const Comment = memo(({ comment, formatDate, index }) => (
-    <div 
-        className="px-4 pt-4 pb-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all group hover:shadow-lg hover:-translate-y-0.5"
-        
-    >
-        <div className="flex items-start gap-3 ">
+    <div className="px-4 pt-4 pb-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all group hover:shadow-lg hover:-translate-y-0.5">
+        {/* <div className="flex items-start gap-3 ">
             {comment.profileImage ? (
                 <img
                     src={comment.profileImage}
@@ -33,7 +30,7 @@ const Comment = memo(({ comment, formatDate, index }) => (
                 </div>
                 <p className="text-gray-300 text-sm break-words leading-relaxed relative bottom-2">{comment.content}</p>
             </div>
-        </div>
+        </div> */}
     </div>
 ));
 

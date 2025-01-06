@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Share2, User, Mail, MessageSquare, Send } from "lucide-react";
-import { Link } from "react-router-dom";
-import SocialLinks from "../components/SocialLinks";
-import Komentar from "../components/Commentar";
-import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Mail, MessageSquare, Send, Share2, User } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import Swal from "sweetalert2";
+import Komentar from "../components/Commentar";
+import SocialLinks from "../components/SocialLinks";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -131,7 +130,7 @@ const ContactPage = () => {
             </div>
 
             <form 
-              action="https://formsubmit.co/ekizulfarrachman@gmail.com"
+              action="https://formsubmit.co/hoangngocminhtri.k22@gmail.com"
               method="POST"
               onSubmit={handleSubmit}
               className="space-y-6"
