@@ -293,7 +293,7 @@ export default function FullWidthTabs() {
           onChangeIndex={setValue}
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
-            {/* <div className="container mx-auto flex justify-center items-center overflow-hidden">
+            <div className="container mx-auto flex justify-center items-center overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-5">
                 {displayedProjects.map((project, index) => (
                   <div
@@ -311,7 +311,7 @@ export default function FullWidthTabs() {
                   </div>
                 ))}
               </div>
-            </div> */}
+            </div>
             {projects.length > initialItems && (
               <div className="mt-6 w-full flex justify-start">
                 <ToggleButton
@@ -323,7 +323,7 @@ export default function FullWidthTabs() {
           </TabPanel>
 
           <TabPanel value={value} index={1} dir={theme.direction}>
-            {/* <div className="container mx-auto flex justify-center items-center overflow-hidden">
+            <div className="container mx-auto flex justify-center items-center overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
                 {displayedCertificates.map((certificate, index) => (
                   <div
@@ -335,7 +335,7 @@ export default function FullWidthTabs() {
                   </div>
                 ))}
               </div>
-            </div> */}
+            </div>
             {certificates.length > initialItems && (
               <div className="mt-6 w-full flex justify-start">
                 <ToggleButton
