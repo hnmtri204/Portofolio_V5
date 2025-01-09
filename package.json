@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
