@@ -12,14 +12,6 @@ const firebaseConfig = {
     appId: "1:634517571427:web:c4e72122d065a2f788f556",
     measurementId: "G-VL3XH28C26"
 };
-// const firebaseConfig = {
-//     apiKey: "AIzaSyDJPq9a0YPoQYkpQ-Uaw7aXQRXzzqOKzFA",
-//     authDomain: "web-kelas-tes.firebaseapp.com",
-//     projectId: "web-kelas-tes",
-//     storageBucket: "web-kelas-tes.appspot.com",
-//     messagingSenderId: "890817433268",
-//     appId: "1:890817433268:web:11e5258f8864a6174c11e1"
-// };
 
 // Initialize with a unique name
 const app = initializeApp(firebaseConfig, 'comments-app');
